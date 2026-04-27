@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Visual Design System</title>
+  <link rel="icon" href="icons/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background atmosphere orbs -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Main content wrapper -->
+  <div class="page-wrapper">
+    
+    <!-- Header badge -->
+    <div class="site-header">
+      <div class="header-badge">
+        <span class="badge-name"><b>Visual</b></span>
+        <span class="badge-divider">▕</span>
+        <span class="badge-role">Design and Prep System</span>
+        <div class="glowing-dot"></div>
+
+        
+
+      </div>
+
+       <!-- Taskbar Navigation -->
+  <nav class="taskbar" aria-label="Site navigation">
+    
+    <button class="taskbar-btn theme-toggle-btn" id="themeToggle" data-tooltip="Theme">
+      <svg class="taskbar-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/></svg>
+      <svg class="taskbar-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </nav>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="subtitle">A living component library exploring glass morphism, responsive behavior and interaction patterns. Every element is hand-crafted — no frameworks.</p>
+
+    <!-- ============================================================
+         SECTION 1: TYPOGRAPHY
+    ============================================================ -->
+    <section class="section-label">
+      <span class="label-line"></span>
+      <span class="label-text">Typography</span>
+      <span class="label-line"></span>
+    </section>
+
+    <div class="showcase-grid two-col">
+      <!-- Type Scale Card -->
+      <div class="glass-card type-card">
+        <h3 class="card-heading">Type Scale</h3>
+        <div class="type-sample" style="font-size: 42px; font-weight: 700;">Heading 1</div>
+        <div class="type-meta">42px / Bold / Line 1.2</div>
+        <div class="type-sample" style="font-size: 28px; font-weight: 600;">Heading 2</div>
+        <div class="type-meta">28px / Semibold / Line 1.3</div>
+        <div class="type-sample" style="font-size: 20px; font-weight: 600;">Heading 3</div>
+        <div class="type-meta">20px / Semibold / Line 1.4</div>
+        <div class="type-sample" style="font-size: 16px;">Body Text — The quick brown fox jumps over the lazy dog.</div>
+        <div class="type-meta">16px / Regular / Line 1.65</div>
+        <div class="type-sample" style="font-size: 13px; color: var(--text-muted);">Caption — Supplementary information</div>
+        <div class="type-meta">13px / Regular / Line 1.5</div>
+      </div>
+
+      <!-- Font Info Card -->
+      <div class="glass-card type-card">
+        <h3 class="card-heading">Font Stack</h3>
+        <div class="font-display">
+          <span class="font-name">Gravitica Mono</span>
+          <span class="font-role">Primary — Headings &amp; Body</span>
+        </div>
+        <div class="font-sample-preview">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+          abcdefghijklmnopqrstuvwxyz<br>
+          0123456789 !@#$%^&*()
+        </div>
+        <div class="font-weights">
+          <span class="weight-tag">Light</span>
+          <span class="weight-tag active">Regular</span>
+          <span class="weight-tag">Semibold</span>
+          <span class="weight-tag">Bold</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 2: COLOR SYSTEM
+    ============================================================ -->
+    <section class="section-label">
+      <span class="label-line"></span>
+      <span class="label-text">Color Palette</span>
+      <span class="label-line"></span>
+    </section>
+
+    <div class="glass-card">
+      <h3 class="card-heading">Semantic Colors</h3>
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--accent);"></div>
+          <span class="color-name">Accent</span>
+          <span class="color-value">#5b6cf9</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--text-primary);"></div>
+          <span class="color-name">Primary Text</span>
+          <span class="color-value">#1a1a1a / #f0f0f0</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--text-secondary);"></div>
+          <span class="color-name">Secondary</span>
+          <span class="color-value">#4a4a4a / #b0b0b0</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--text-muted);"></div>
+          <span class="color-name">Muted</span>
+          <span class="color-value">#888 / #666</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--status-green);"></div>
+          <span class="color-name">Status Green</span>
+          <span class="color-value">#34d399</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-preview" style="background: var(--glass-bg); border: 1px solid var(--glass-border);"></div>
+          <span class="color-name">Glass BG</span>
+          <span class="color-value">rgba(255,255,255,0.55)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 3: COMPONENT SHOWCASE
+    ============================================================ -->
+    <section class="section-label">
+      <span class="label-line"></span>
+      <span class="label-text">Components</span>
+      <span class="label-line"></span>
+    </section>
+
+    <!-- Buttons -->
+    <div class="glass-card">
+      <h3 class="card-heading">Buttons</h3>
+      <div class="component-row">
+        <button class="btn btn-primary">Primary Action</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-ghost">Ghost Button</button>
+        <button class="btn btn-icon" aria-label="Icon button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Input Fields -->
+    <div class="glass-card">
+      <h3 class="card-heading">Input Fields</h3>
+      <div class="component-row stacked">
+        <div class="input-group">
+          <label class="input-label">Text Input</label>
+          <input type="text" class="input-field" placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+          <label class="input-label">Select</label>
+          <select class="input-field">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Textarea</label>
+          <textarea class="input-field" rows="3" placeholder="Write your message..."></textarea>
+        </div>
+        <div class="input-group">
+          <label class="checkbox-label">
+            <input type="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            Accept terms and conditions
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="glass-card">
+      <h3 class="card-heading">Card Variants</h3>
+      <div class="component-row">
+        <div class="demo-card glass-card">
+          <div class="demo-card-icon">📁</div>
+          <h4>Default Card</h4>
+          <p>Standard glass card with padding.</p>
+        </div>
+        <div class="demo-card glass-card elevated">
+          <div class="demo-card-icon">✨</div>
+          <h4>Elevated Card</h4>
+          <p>Stronger shadow on hover.</p>
+        </div>
+        <div class="demo-card glass-card interactive">
+          <div class="demo-card-icon">🎯</div>
+          <h4>Interactive Card</h4>
+          <p>Scales up on hover.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tags & Pills -->
+    <div class="glass-card">
+      <h3 class="card-heading">Tags &amp; Pills</h3>
+      <div class="component-row">
+        <span class="tag tag-default">Default</span>
+        <span class="tag tag-accent">Machine Learning</span>
+        <span class="tag tag-success">Completed</span>
+        <span class="tag tag-warning">In Progress</span>
+        <span class="tag tag-danger">Archived</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 4: RESPONSIVE LAYOUT PLAYGROUND
+    ============================================================ -->
+    <section class="section-label">
+      <span class="label-line"></span>
+      <span class="label-text">Responsive Playground</span>
+      <span class="label-line"></span>
+    </section>
+
+    <div class="glass-card">
+      <h3 class="card-heading">Live Viewport Simulator</h3>
+      <p class="card-desc">Drag the handle to resize the frame. See how layouts adapt.</p>
+      
+      <!-- Viewport controls -->
+      <div class="viewport-controls">
+        <button class="vp-preset" data-width="375" data-label="Mobile S">📱 375px</button>
+        <button class="vp-preset" data-width="480" data-label="Mobile L">📱 480px</button>
+        <button class="vp-preset active" data-width="768" data-label="Tablet">📋 768px</button>
+        <button class="vp-preset" data-width="1024" data-label="Desktop">🖥️ 1024px</button>
+        <button class="vp-preset" data-width="1440" data-label="Wide">🖥️ 1440px</button>
+        <span class="vp-label" id="vpLabel">Current: 768px (Tablet)</span>
+      </div>
+
+      <!-- Simulated viewport -->
+      <div class="viewport-wrapper">
+        <div class="viewport-frame" id="viewportFrame">
+          <div class="vp-demo-grid">
+            <div class="vp-card vp-hero">Hero Section</div>
+            <div class="vp-card vp-sidebar">Sidebar</div>
+            <div class="vp-card vp-content">Main Content</div>
+            <div class="vp-card vp-extra">Extra</div>
+            <div class="vp-card vp-footer">Footer</div>
+          </div>
+          <div class="vp-info">
+            <span id="vpWidth">768px</span> · Grid: <span id="vpColumns">2 columns</span>
+          </div>
+        </div>
+        <!-- Drag handle -->
+        <div class="viewport-handle" id="viewportHandle">
+          <div class="handle-grip">
+            <span>⟷</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 5: GLASS MORPHISM EXPLORATIONS
+    ============================================================ -->
+    <section class="section-label">
+      <span class="label-line"></span>
+      <span class="label-text">Glass Explorations</span>
+      <span class="label-line"></span>
+    </section>
+
+    <div class="glass-card">
+      <h3 class="card-heading">Blur Intensity Study</h3>
+      <p class="card-desc">Four levels of backdrop-filter blur applied to identical cards.</p>
+      <div class="blur-grid">
+        <div class="blur-sample" style="--sample-blur: 4px;">
+          <div class="blur-inner">
+            <span class="blur-label">4px</span>
+            <span class="blur-desc">Subtle</span>
+          </div>
+        </div>
+        <div class="blur-sample" style="--sample-blur: 12px;">
+          <div class="blur-inner">
+            <span class="blur-label">12px</span>
+            <span class="blur-desc">Moderate</span>
+          </div>
+        </div>
+        <div class="blur-sample" style="--sample-blur: 20px;">
+          <div class="blur-inner">
+            <span class="blur-label">20px</span>
+            <span class="blur-desc">Strong</span>
+          </div>
+        </div>
+        <div class="blur-sample" style="--sample-blur: 32px;">
+          <div class="blur-inner">
+            <span class="blur-label">32px</span>
+            <span class="blur-desc">Ethereal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h3 class="card-heading">Opacity &amp; Tint Variations</h3>
+      <p class="card-desc">Glass cards with different background opacities and color tints.</p>
+      <div class="tint-grid">
+        <div class="tint-sample" style="--tint-bg: rgba(255,255,255,0.3);">
+          <span>30% Opacity</span>
+        </div>
+        <div class="tint-sample" style="--tint-bg: rgba(255,255,255,0.5);">
+          <span>50% Opacity</span>
+        </div>
+        <div class="tint-sample" style="--tint-bg: rgba(255,255,255,0.75);">
+          <span>75% Opacity</span>
+        </div>
+        <div class="tint-sample" style="--tint-bg: rgba(91,108,249,0.25);">
+          <span>Accent Tint</span>
+        </div>
+        <div class="tint-sample" style="--tint-bg: rgba(52,211,153,0.25);">
+          <span>Green Tint</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="site-footer">
+      <span>©️2026 Mduduzi Kundai</span>
+      <span>Design is intelligence made visible</span>
+    </div>
+  </div>
+
+ 
+
+  <script src="javascript.js"></script>
+</body>
+</html>
